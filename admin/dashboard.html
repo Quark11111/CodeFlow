@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/dashboard.css">
+    <title>Admin Panel Course</title>
+</head>
+<body>
+    <section id="admin">
+    <div class="admin__header">
+        <div>Админ Панель</div>
+        <button class="admin__logout" onclick="logout()">Выход</button>
+    </div>
+    <div class="admin__content">
+        <div class="admin__name">Заявки</div>
+        <table class="admin__table">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Email</th>
+                    <th>Телефон</th>
+                    <th>Сообщение</th>
+                    <th>Дата</th>
+                </tr>
+            </thead>
+            <tbody id="requests-table"></tbody>
+        </table>
+    </div>
+</section>
+
+<script type="module" src="../src/js/admin.js"></script>
+<script type="module">
+    import { logout } from '../src/js/auth.js'
+    window.logout = logout
+</script>
+</body>
+</html>

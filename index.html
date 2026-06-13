@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>CodeFlow</title>
+</head>
+
+<body class="main-content">
+    <nav class="nav-bar">
+        <div class="navigation">
+            <div class="navigation__name">CODEFLOW</div>
+            <button class="nav-toggle" id="nav-toggle">☰</button>
+            <ul class="navigation__list-nav" id="nav-menu">
+                <li><a href="#courses">Курсы</a></li>
+                <li><a href="#teachers">Преподаватели</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#FaQ">FaQ</a></li>
+                <li><a href="#form">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="hero__content">
+            <div class="hero__main-title">Learn to <span>code.</span> Build your <span>future.</span></div>
+            <div class="hero__second-title">Практические курсы по программированию от опытных разработчиков. Начни с нуля — дойди до работы.</div>
+            <button class="hero__button">Начать обучение</button>
+        </div>
+    </section>
+    <section id="courses">
+        <div class="course__content">
+            <div class="course__main-title">Наши курсы</div>
+            <div class="course">
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="teachers">
+        <div class="teachers__content">
+            <div class="teachers__main-title">Наши преподаватели</div>
+            <div class="teacher">
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="prices">
+        <div class="prices__content">
+            <div class="prices__main-title">Цены</div>
+            <div class="price"></div>
+        </div>
+    </section>
+    
+    <section id="reviews">
+        <div class="reviews__content">
+            <div class="reviews__main-title">Отзывы</div>
+            <div class="review"></div>
+        </div>
+        
+    </section>
+    
+    <section id="FaQ">
+        <div class="FaQ__content">
+            <div class="FaQ__main-title">FAQ</div>
+            <div class="FaQ"></div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="form__content">
+            <div class="form__main-title">Готов<br>начать?</div>
+            <form class="form__input">
+                <input type="text" placeholder="Имя" class="form__field" id="name" required>
+                <input type="email" placeholder="Email" class="form__field" id="email" required>
+                <input type="tel" placeholder="Телефон" class="form__field" id="phone" required>
+                <textarea placeholder="Сообщение" class="form__field" id="message" rows="5" required></textarea>
+                <button type="submit" class="form__btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
