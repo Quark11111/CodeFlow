@@ -620,12 +620,14 @@ body  {
         text-decoration: none;
     }
 
-    body  {
-        max-width: 480px;
+    body  {   
+        overflow-x: hidden;
         background-color: var(--bg-color);
     } 
 
     .main-content {
+        max-width: 100%;
+        width: 100%;
         margin: 0 auto;
         font-family: Montserrat;
         padding: 0 10px; 
@@ -691,7 +693,6 @@ body  {
     }
 
     #courses {
-        max-width: 480px;
         display: flex;
         width: 100%;
         height: max-content;
@@ -762,7 +763,6 @@ body  {
     }
 
     #teachers {
-        max-width: 480px;
         display: flex;
         width: 100%;
         height: min-content;
@@ -786,7 +786,7 @@ body  {
     }
 
     .teacher {
-        width: 1400px;
+        width: 100%;  
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -847,7 +847,6 @@ body  {
     }
 
     #prices {
-        max-width: 480px;
         display: flex;
         width: 100%;
         margin-top: 100px;
@@ -963,7 +962,6 @@ body  {
     }
 
     #reviews {
-        max-width: 480px;
         display: flex;
         width: 100%;
         height: max-content;
@@ -1024,7 +1022,6 @@ body  {
     }
 
     #FaQ {
-        max-width: 480px;
         width: 100%;
         display: flex;
         height: max-content;
@@ -1078,7 +1075,6 @@ body  {
     }
 
     #form {
-        max-width: 480px;
         width: 100%;
         display: flex;
         align-items: center;
