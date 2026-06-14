@@ -16,7 +16,7 @@ if (form) {
 
         try {
             await signInWithEmailAndPassword(auth, email, password)
-            window.location.href = '/admin/dashboard.html'
+            window.location.href = '/dashboard/'
         } catch (error) {
             alert('Ошибка входа: ' + error.message)
         }
@@ -26,7 +26,7 @@ if (form) {
 export const logout = async () => {
     try {
         await signOut(auth)
-        window.location.href = '/admin/index.html'
+        window.location.href = '/admin/'
     } catch (error) {
         console.error('Ошибка выхода:', error)
     }
